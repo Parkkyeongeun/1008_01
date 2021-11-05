@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; display: block; color: #333;}
+html, body {font-size: 62.5%; color: #333; font-family: 'Nanum Gothic', sans-serif;}
+body {background: url('../img/on.jpg') 0 0 / cover no-repeat; background-size: 100%;}
+.clearfix {content: ''; display: block; clear: both;}
+.vp960 {display: none;}
+
+/* header */
+
+header {max-width: 1700px; width: 100%; height: 100px; line-height: 100px;}
+header h1 {height: 90px; float: left;}
+header h1 a {text-align: center;}
+header h1 a img {width: 340px;}
+header ul {float: right;}
+header ul {font-size: 12px;}
+header ul li {margin-left: 2px; display: inline-block;}
+header ul li a {padding: 0 10px; line-height: 10px; border-right: solid 1px #999;}
+header ul li:last-child a {border-right: none;}
+
+/* nav */
+
+nav {max-width: 220px; width: 11.45%; margin: 70px 190px 0 80px; float: left;}
+nav .lgn {width: 180px; height: 50px; line-height: 50px; margin: 30px auto;}
+nav .lgn img {width: 50px; border-radius: 50%; float: left;}
+nav .lgn ul {float: right;}
+nav .lgn ul li {display: inline-block;}
+nav .lgn ul li:first-child a {height: 10px; line-height: 10px; margin-right: 10px; padding: 0 10px;
+    border-right: solid 1px #999; font-weight: bold;}
+/*  */
+
+nav .srchbr {width: 220px; height: 20px; line-height: 20px; margin: 20px auto; color:rgb(192, 192, 192); background-color: #fff; text-align: center; border: solid 3px rgb(192, 192, 192);}
+nav .srchbr p {float: left; padding-left: 5px;}
+nav .srchbr i {width: 20px; height: 20px; line-height: 20px; color: #999; background-color: rgb(192, 192, 192); font-size: 16px; float: right; cursor: pointer;} 
+nav .srchbr i span {position: absolute; left: -99999px;}
+/*  */
+
+nav .nav {width: 220px; margin: 20px;}
+nav .nav ul {font-size: 18px;} 
+nav .nav ul li {font-weight: bold;}
+
+nav .nav ul .depth01 {width: 100px; position: relative; margin: 30px 0;}
+nav .nav ul .depth01:hover > a {color: #00D346;}
+nav .nav ul .depth01:hover > .depth02 {display: block;}
+
+nav .nav ul .depth02 {width: 120px; background-color: rgba(255, 255, 255, 0.7); border-radius: 10px; 
+    text-align: left; font-size: 14px; display: none; position: absolute; top: 0; left: 100px;}
+nav .nav ul .depth02 > li {padding: 10px;}
+nav .nav ul .depth02 > li > a {color: #555;}
+nav .nav ul .depth02 > li:hover > a {color: #00D346;}
+/*  */
+
+nav .ad img {width: 220px;}
+
+/* .cont */
+/* .cont .cont01 */
+.cont {max-width: 1250px; width: 67%; float: left; /* background-color: wheat; */}
+.cont01 {margin: 100px 0; color: #fff;
+    display: flex; justify-content: space-between;}
+.cont01 article:first-child {width: 180px; color: #333; text-align: right;}
+.cont01 article h1 {font-size: 30px; font-weight: bold;}
+.cont01 article > p {margin-top: 10px; font-size: 16px;}
+
+.cont01 article {cursor: pointer; position: relative; overflow-x: hidden;}
+.cont01 article:hover:not(article:first-child) {transform: scale(150%); transition: .5s;}
+.cont01 article:hover dl{display: block;}
+.cont01 article img {width: 100px;}
+
+.cont01 article dl {width: 100px; height: 100px; background-color: rgba(50, 50, 50, 0.5);
+    text-align: center; display: none; position: absolute; top: 0; left: 0;
+    white-space: nowrap;}
+.cont01 article dl dt {padding: 15px 0; font-size: 30px;}
+.cont01 article dl dd {margin-bottom: 5px;}
+.cont01 article dl dd:first-of-type {font-weight: bold;}
+.cont01 article:nth-child(6) dd:last-of-type {top: 80px;}
+.animation {position: absolute; ; animation: text 10s infinite linear;}
+
+.cont01 article a p {width: 100px; height: 100px; line-height: 100px; color: #fff; background-color: #333;
+    text-align: center;}
+
+@keyframes text {
+    0% {left: 50%;}
+    100% {left: -150%;}
+}
+
+/* .cont */
+/* .cont02 */
+.cont02 {max-width: 1250px; width: 100%; height: 300px; margin-bottom: 100px;
+    background: url('../img/Thama_bg.png') 100% 100% / cover no-repeat;
+    display: flex; justify-content: space-between; align-items: flex-end; cursor: pointer;}
+.cont02 article img {width: 290px; margin-bottom: 8px;}
+.cont02 article dl {margin: 30px; white-space: pre-line;}
+.cont02 article dl :not(dd) {font-size: 26px; font-weight: bold;}
+.cont02 article dd {font-size: 14px;}
+
+.cont02 article:last-child {width: 100px; height: 100px; margin: 0 15px 15px; background-color: #333; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3); display: flex; align-items: flex-end; z-index: -1;}
+.cont02 article p {margin: 0 45px 20px; color: #fff; font-size: 16px; transform: rotate(-45deg);}
+
+/* .cont */
+/* .cont03 */
+.cont03 {height: 200px; display: flex; justify-content: space-between;}
+.cont03 article:first-child {width: 180px; color: #333; text-align: right;}
+.cont03 article h1 {font-size: 30px; font-weight: bold;}
+.cont03 article p {margin-top: 10px; font-size: 16px;}
+
+.cont03 article h6 {margin-bottom: 10px; text-align: right; font-size: 20px;}
+.cont03 article h6 span {color: yellow;}
+.cont03 article dl {width: 300px; height: 36px; line-height: 30px;
+    background-color: #fff; border: solid 3px rgb(192, 192, 192);
+    font-size: 16px; display: flex; justify-content: space-between; box-sizing: border-box;}
+.cont03 article dl dt {margin-left: 10px; color: #00D346; font-weight: bold;}
+.cont03 article dl dt span {margin: 10px; color: rgb(192, 192, 192);}
+.cont03 article dl dd span {font-weight: bold;}
+.cont03 article dl dd i {width: 30px; height: 30px; line-height: 30px; text-align: center;
+    color: #999; background-color: rgb(192, 192, 192);}
+
+/* .cont */
+/* .cont04 */
+.cont04 {height: 700px;}
+.cont04 .lt {width: 180px; float: left; text-align: right;}
+.cont04 .lt h1 {font-size: 30px; font-weight: bold;}
+.cont04 .lt p {margin-top: 10px; font-size: 16px;}
+
+.cont04 .rt {max-width: 1015px; width: 100%; display: flex; justify-content: space-between; float: right;}
+.cont04 .rt article {font-size: 16px; text-align: center; position: relative; cursor: pointer;}
+.cont04 .rt article img {width: 300px;}
+.cont04 .rt article .isd {width: 300px; height: 200px; color: #fff; background-color: rgba(50, 50, 50, 0.5);
+    display: none; position: absolute; top: 0; left: 0;}
+.cont04 .rt article .isd dt {margin: 70px 0 5px; font-size: 40px;}
+.cont04 .rt article .isd dd {font-size: 12px;}
+.cont04 .rt article:hover .isd {display: block;}
+.cont04 .rt {max-width: 1015px; width: 100%; display: flex; justify-content: space-between; float: right;}
+.cont04 .rt article .otsd dt {margin: 20px 0; font-weight: bold;}
+.cont04 .rt article .otsd dd {margin: -15px 0 40px;}
+
+/* .cont */
+/* .cont05 */
+.cont05 {max-width: 1250px; width: 100%; height: 700px;}
+.cont05 .lt {width: 180px; margin-bottom: 12px; color: #333; text-align: right; float: left;}
+.cont05 .lt h1 {font-size: 30px; font-weight: bold;}
+.cont05 .lt p {margin-top: 10px; font-size: 16px; white-space: pre-line;}
+.cont05 .lt p b {font-size: 18px;}
+
+.cont05 .rt {float: right;}
+.cont05 .rt article {width: 1015px; margin-bottom: 15px; display: flex; justify-content: space-between;}
+.cont05 .rt article img {width: 190px; height: 190px; box-shadow: 3px 3px 5px rgba(0, 0, 0, .3); cursor: pointer;}
+.cont05 .rt article:last-child > p {width: 190px; height: 190px; line-height: 190px; text-align: center;
+    font-size: 14px; color: #fff; background-color: #000; cursor: pointer;}
+
+/* footer */
+footer {max-width: 1920px; width: 100%; height: 300px; background-color: #333; float: right;}
+footer article {max-width: 1250px; width: 67%; margin: 40px auto; padding-left: 250px; text-align: right;}
+footer article ul {margin: 30px 0;}
+footer article ul:first-of-type {padding-bottom: 30px; border-bottom: solid 2px #444;}
+footer article ul:first-of-type li a {margin-right: 30px; color: #00D346; font-size: 20px;}
+footer article ul:first-of-type li:last-child a {margin-right: 0;}
+footer article ul li {display: inline-block;}
+footer article ul li a {color: rgba(255, 255, 255, 0.3); font-size: 14px;}
+footer article p {line-height: 20px; color: rgba(255, 255, 255, 0.3); font-size: 14px;}
+
+
+/* 뷰포트 1024px이하 */
+@media screen and (max-width:960px) {
+    .vp960 {display: block; margin-right: 50px;}
+
+    header ul {display: none;}
+    nav {display: none;}
+
+    .cont {width: calc(100% - 100px); margin: 0 auto; float: none;}
+    .cont section {padding-top: 100px; position: relative;}
+    .cont section .lt {text-align: center; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+
+}
